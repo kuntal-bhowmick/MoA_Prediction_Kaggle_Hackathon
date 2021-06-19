@@ -19,10 +19,16 @@ How to evaluate the accuracy of a solution?
 Based on the MoA annotations, the accuracy of solutions will be evaluated on the average value of the logarithmic loss function applied to each drug-MoA annotation pair.
 
 ## My Solution Description :
-I have mainly used different variants of BERT and Roberta in this competition. In BERT, I have used DistilBERT,Bert Multilingual,Bert base and Bert large where each of them had around 5 different models based on different Learning Rate,Input text length,Pseudo Labelling etc.
+Different variant of Deep Learning Neural Networks and TabNet have been main models I have used in this competition.
 
 ## Preprocessing : 
-I have done minimal preprocessing in BERT and Roberta models.
+I have used a bunch of Feature Selection and Feature Engineering steps in this competition.
+# Feature Selection:
+I have used PCA,VarianceThreshold and KMeans for Feature Selection purpose.
+PCA : I have used different variants of PCA based on different n_components value in different models and some these models provided decent improvement in ensembling.
+I have applied PCA separately on Gene varaible and Cell variable and then combined both of them to create the final dataset.
+# Normalization:
+I have used QuantileTransformer to change the data distribution and get as much normal distribution as possible.
 
 ## Loss function : 
 I have used Focal Loss as we had imbalanced dataset in this competition.
