@@ -21,24 +21,24 @@ Based on the MoA annotations, the accuracy of solutions will be evaluated on the
 ## My Solution Description :
 Different variant of Deep Learning Neural Networks and TabNet have been main models I have used in this competition.
 
-## Preprocessing : 
+### Preprocessing : 
 I have used a bunch of Feature Selection and Feature Engineering steps in this competition.
-# Feature Selection:
+#### Feature Selection:
 I have used PCA,VarianceThreshold and KMeans for Feature Selection purpose.
 PCA : I have used different variants of PCA based on different n_components value in different models and some these models provided decent improvement in ensembling.
 I have applied PCA separately on Gene varaible and Cell variable and then combined both of them to create the final dataset.
-# Normalization:
+#### Normalization:
 I have used QuantileTransformer to change the data distribution and get as much normal distribution as possible.
 
-## Loss function : 
+### Loss function : 
 I have used Focal Loss as we had imbalanced dataset in this competition.
 
-## Callbacks : WIP 
+### Callbacks : WIP 
 
-## Ensemble : 
+### Ensemble : 
 I have used 2 layer ensembling here. At first layer, I have created weighted average ensembling separately for Bert Base,Bert Large,Distillbert,Bert ML and Roberta.
 So , if I have 5 different models of Bert Base based on different LR and Input text length then I took weighted average of those and created one blended BERT base model.Similarly, I had blended models of XLM Roberta,Bert Multilingual,Bert Large and DistilBert as well where each of them are constructed using 4-5 different model variants using weighted average.
 Finally in 2nd layer, I took weighted average of all of these blended models. This 2 layer ensembling had given me better results for sure , it helped me to finish very close to Top 5% otherwise with single layer ensemble I would have been around Top 10% only.
 
-## My Performance : 
+### My Performance : 
   Private/Final Rank : 37/4373 (Top 1%)
