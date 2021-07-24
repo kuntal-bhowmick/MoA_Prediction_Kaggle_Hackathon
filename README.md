@@ -1,5 +1,5 @@
 # MoA_Prediction_Kaggle_Hackathon
-This is a repository of codes used by me in Kaggle Competition [Mechanisms of Action (MoA) Prediction](https://www.kaggle.com/c/lish-moa)
+This is a repository of codes I have used in Kaggle Competition [Mechanisms of Action (MoA) Prediction](https://www.kaggle.com/c/lish-moa)
 
 ## Competition Overview :
 What is the Mechanism of Action (MoA) of a drug? And why is it important?
