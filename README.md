@@ -34,7 +34,7 @@ I have used QuantileTransformer to change the data distribution and get as much 
 ### Models :
 #### 1. TabNetRegressor :
 #### 2. DeepLearning : 
-I have created a DL model consisting of 3 layers where each of these layers are made of DropOut, BatchNorm and WeightNorm with couple of dense layers.
+I have created a DL model consisting of 3 layers where each of these layers are made of DropOut, BatchNorm and WeightNorm with dense layers. I have saved these models after training and inferenced them again for prediction on test dataset.
 
 ### Loss function : 
 I have used Log Loss as the loss function in this competition.
@@ -42,8 +42,9 @@ I have used Log Loss as the loss function in this competition.
 ### Callbacks : WIP 
 
 ### Ensemble : 
-I have used 2 layer ensembling here. At first layer, I have created weighted average ensembling separately for NNs and TabeNet.
+I have used 2 layer ensembling here. At first layer, I have created weighted average ensembling separately for NNs and TabNet.
 So , if I have 3-4 different models of NNs based on different LR and different number of components used in PCA then I took weighted average of those and created one blended Neural Network model.Similarly, I had blended models of TabNet as well where each of them are constructed using 4-5 different model variants using weighted average.
+Each of TabNet and NN models are trained with 7 different seeds, to get better generalized results, before those are used for ensembling.
 
 ### My Performance : 
   Private/Final Rank : 37/4373 (Top 1%)
