@@ -31,6 +31,10 @@ I have applied PCA separately on Gene varaible and Cell variable and then combin
 #### Normalization:
 I have used QuantileTransformer to change the data distribution and get as much normal distribution as possible.
 
+### Models :
+    #### 1. TabNetRegressor :
+    #### 2. DeepLearning :
+
 ### Loss function : 
 I have used Log Loss as the loss function in this competition.
 
