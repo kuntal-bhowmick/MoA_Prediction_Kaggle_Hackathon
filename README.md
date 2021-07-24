@@ -33,7 +33,8 @@ I have used QuantileTransformer to change the data distribution and get as much 
 
 ### Models :
 #### 1. TabNetRegressor :
-#### 2. DeepLearning :
+#### 2. DeepLearning : 
+I have created a DL model consisting of 3 layers where each of these layers are made of DropOut, BatchNorm and WeightNorm with couple of dense layers.
 
 ### Loss function : 
 I have used Log Loss as the loss function in this competition.
